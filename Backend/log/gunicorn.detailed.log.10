@@ -1,0 +1,100 @@
+[2023-07-09 20:24:54,433] ERROR log_exception() L1449 Exception on /financeiro [POST] - call_trace=C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\Backend\app.py", line 43, in add_financeiro
+    data_vencimento = datetime.strptime(form.data_vencimento, '%y/%m/%d'),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '2023-07-05' does not match format '%y/%m/%d'
+[2023-07-09 20:24:54,461] INFO _log() L224  127.0.0.1 - - [09/Jul/2023 20:24:54] "[35m[1mPOST /financeiro HTTP/1.1[0m" 500 - - call_trace=C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-09 20:25:30,263] ERROR log_exception() L1449 Exception on /financeiro [POST] - call_trace=C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\Backend\app.py", line 43, in add_financeiro
+    data_vencimento = datetime.strptime(form.data_vencimento, '%y-%m-%d'),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '2023-07-12' does not match format '%y/%m/%d'
+[2023-07-09 20:25:30,276] INFO _log() L224  127.0.0.1 - - [09/Jul/2023 20:25:30] "[35m[1mPOST /financeiro HTTP/1.1[0m" 500 - - call_trace=C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-09 20:26:22,806] INFO _log() L224  127.0.0.1 - - [09/Jul/2023 20:26:22] "GET /financeiros HTTP/1.1" 200 - - call_trace=C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-07-09 20:26:35,405] ERROR log_exception() L1449 Exception on /financeiro [POST] - call_trace=C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\Backend\app.py", line 43, in add_financeiro
+    data_vencimento = datetime.strptime(form.data_vencimento, '%y-%m-%d'),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\_strptime.py", line 352, in _strptime
+    raise ValueError("unconverted data remains: %s" %
+ValueError: unconverted data remains: 25
+[2023-07-09 20:26:35,424] INFO _log() L224  127.0.0.1 - - [09/Jul/2023 20:26:35] "[35m[1mPOST /financeiro HTTP/1.1[0m" 500 - - call_trace=C:\Users\victo\OneDrive\Documentos\Pos_graduacao_full_stack\MVP\projeto_sprint_1\backend\env\Lib\site-packages\werkzeug\_internal.py L224 

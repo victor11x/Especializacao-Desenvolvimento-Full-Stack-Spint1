@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Projeto</title>
+  </head>
+
+  <body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+      <div class="title">
+        <h2>Controle Financeiro</h2>
+      </div>
+      <div class="banner">
+        <img
+          src="https://investidorsardinha.r7.com/wp-content/uploads/2020/10/bolsa-de-valores-o-que-e-como-funciona-mitos-e-custos-para-investir-13-1536x1024.jpg"
+          alt="y"
+        />
+      </div>
+    </header>
+    <div class="subtitle">
+      <h3>Adiciona nova transação:</h3>
+    </div>
+
+    <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+      <input type="text" id="newInput" placeholder="Adicionar novo item:" />
+      <input type="text" id="newExpense" placeholder="Tipo Despesa:" />
+      <input type="text" id="newPay" placeholder="Tipo Pagamento:" />
+      <input type="date" id="newDate" placeholder="Data Vencimento:" />
+      <input type="text" id="newPrice" placeholder="Valor:" />
+      <span onclick="newItem()" class="addBtn">Adicionar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+      <table id="myTable">
+        <tr>
+          <th>Nome</th>
+          <th>Tipo Despesa</th>
+          <th>Tipo Pagamento</th>
+          <th>Data Vencimento</th>
+          <th>Valor</th>
+          <th>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/126/126468.png"
+              width="15px"
+              height="15px"
+            />
+          </th>
+        </tr>
+      </table>
+    </section>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

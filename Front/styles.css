@@ -1,0 +1,190 @@
+body,
+ul,
+li {
+  font-family: tahoma;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  color: white;
+  width: 100%;
+  background-color: rgb(26, 29, 40);
+  display: inline-block;
+  padding: 2px 0px;
+  position: sticky;
+  top: 0px;
+}
+
+.subtitle {
+  padding: 0px 2px;
+  margin: 0;
+}
+
+h3 {
+  font-family: tahoma;
+  text-align: rigth;
+  padding: 0rem 3rem;
+  color: rgb(47, 47, 47);
+}
+.banner {
+  height: 100px;
+  overflow: hidden;
+}
+
+.banner img {
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+.newItem {
+  background-color: rgb(255, 255, 255);
+  padding: 2.3rem 0.3rem;
+  color: white;
+  gap: 0.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.newItem:after {
+  content: "";
+  display: table;
+  clear: both;
+  /* white-space: nowrap; */
+}
+
+#newInput {
+  margin: 0;
+  border: 0.2px solid rgb(35, 32, 24);
+  width: 25%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#newPay {
+  margin: 0;
+  border: 0.2px solid rgb(35, 32, 24);
+  width: 10%;
+  padding: 10px;
+  font-size: 13px;
+}
+
+#newExpense {
+  margin: 0;
+  border: 0.2px solid rgb(35, 32, 24);
+  width: 10%;
+  padding: 10px;
+  font-size: 13px;
+}
+
+#newDate {
+  margin: 0;
+  border: 0.2px solid rgb(35, 32, 24);
+  width: 10%;
+  padding: 10px;
+  font-size: 13px;
+}
+
+#newPrice {
+  margin: 0;
+  border: 0.2px solid rgb(35, 32, 24);
+  width: 8%;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.addBtn {
+  padding: 9px 14px;
+  background-color: rgb(35, 32, 24);
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.addBtn:hover {
+  background-color: #2ab53a;
+  color: white;
+}
+
+.items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.close {
+  border: 2px solid;
+  border-radius: 360rem;
+  height: 20px;
+  display: flex;
+  color: #f44336;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.close:hover {
+  color: #f44336;
+  font-weight: bolder;
+}
+
+table th {
+  font-weight: 900;
+  padding: 1rem 2.5rem;
+  text-align: justify;
+  font-size: 15px;
+  width: 100%;
+}
+
+table tbody tr {
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+table tr:hover {
+  opacity: 1;
+}
+table tbody tr td:first-child,
+table thead tr th:first-child {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+table tbody tr td:last-child,
+table thead tr th:last-child {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+table img {
+  display: block;
+}
+
+table td {
+  width: 100%;
+  padding: 1rem 2rem;
+  white-space: nowrap;
+}
+
+table {
+  background-color: white;
+  width: 50%;
+}
+
+tr:nth-child(odd) {
+  background: rgb(200, 199, 199);
+  color: rgb(0, 0, 0);
+}
+
+th:nth-child(1) {
+  width: 80%;
+}

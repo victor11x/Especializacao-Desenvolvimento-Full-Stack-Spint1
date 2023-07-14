@@ -1,8 +1,8 @@
 # Meu Front
 
-Este projeto faz parte da Sprint 1 da Disciplina Desenvolvimento Full Stack Básico na PUC-RIO.
+Este projeto faz parte da Sprint 1 Disciplina Desenvolvimento Full Stack Básico na PUC-RIO.
 
-O objetivo e apresentar parte do Front do Sistema.
+Neste repositorio consta parte do Front site do Sistema.
 
 ---
 
